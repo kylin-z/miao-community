@@ -1,0 +1,129 @@
+/**
+ * @FileName: reset
+ * @Author: fhy
+ * @Explain: 重置文件
+ */
+/* -----------------------基础重置 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+  width: 0;
+}
+mark {
+  background: #ff0;
+  color: #333;
+}
+figure {
+  margin: 1em 40px 1em 40px;
+}
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+input,
+button {
+  overflow: visible;
+  font-family: inherit;
+}
+textarea {
+  overflow: auto;
+  color: inherit;
+  font: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+}
+table th,
+table td {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+iframe,
+img {
+  border: 0;
+}
+iframe {
+  vertical-align: top;
+}
+img {
+  vertical-align: middle;
+}
+a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+  color: #333;
+  text-decoration: none;
+}
+label {
+  display: inline-block;
+}
+html {
+  font-size: 20px;
+}
+body {
+  background: #e7e7e7 url(../images/commnunity-bg.png);
+  color: #333;
+  font-family: "΢���ź�", "Arial";
+}
+.header {
+  width: 100%;
+  height: 4rem;
+  background-color: #fff;
+  box-shadow: 0 0.05rem 0.25rem 0.05rem #807e7e;
+}

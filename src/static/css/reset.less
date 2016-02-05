@@ -1,0 +1,103 @@
+/**
+ * @FileName: reset
+ * @Author: fhy
+ * @Explain: 重置文件
+ */
+/* -----------------------基础重置 */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,nav,section,summary {
+  display: block;
+}
+
+audio,canvas,video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #333;
+}
+
+figure {
+  margin: 1em 40px 1em 40px;
+}
+
+body,
+dl,dt,dd,
+ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,code,
+form,fieldset,legend,input,textarea,
+p,blockquote{
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea{
+  font-size: 100%;
+}
+
+//修改按钮类型（button或submit）的元素添加padding后，ie8及以下浏览器会产生额外宽度
+input,
+button{
+  overflow: visible;
+  font-family: inherit;
+}
+
+// 修改ie浏览器下textarea的默认overflow：scroll值,并使其继承父级字体和颜色
+textarea{
+  overflow: auto;
+  color: inherit;
+  font: inherit;
+
+}
+
+// 清除ie10文本框默认的清除按钮
+input::-ms-clear {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  th,
+  td{
+    padding: 0;
+  }
+}
+
+li{
+  list-style-type: none;
+}
+
+iframe,
+img{
+  border: 0;
+}
+
+iframe{
+  vertical-align: top;
+}
+
+img{
+  vertical-align: middle;
+}
+a,a:hover,a:link,a:visited,a:active{
+  color:#333;
+  text-decoration:none;
+}
+label{
+  display: inline-block;
+}
