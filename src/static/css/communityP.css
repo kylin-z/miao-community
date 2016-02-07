@@ -102,7 +102,6 @@ a:hover,
 a:link,
 a:visited,
 a:active {
-  color: #333;
   text-decoration: none;
 }
 label {
@@ -137,6 +136,12 @@ label {
   float: left;
   margin-left: 1rem;
 }
+.nav .menu {
+  color: #333;
+}
+.nav .menu:hover {
+  color: #7594b3;
+}
 .hs-box {
   position: relative;
   display: table-cell;
@@ -146,14 +151,14 @@ label {
   position: absolute;
   width: 3rem;
   height: 3rem;
-  box-shadow: 0 0 0.05rem 0.05rem #ADADAD;
+  box-shadow: 0 0.06rem 0.05rem 0.05rem#ADADAD;
 }
 .c-box {
   position: relative;
   display: table-cell;
-  width: 37rem;
+  width: 35rem;
   background-color: #fff;
-  box-shadow: 0 0 0.05rem 0.05rem #ADADAD;
+  box-shadow: 0 0.06rem 0.05rem 0.05rem#ADADAD;
   padding: 1rem 1rem;
 }
 .l-j {
@@ -171,7 +176,7 @@ label {
   font-size: 16px;
 }
 .wt {
-  width: 31rem;
+  width: 29rem;
   height: 100%;
   border: none;
   padding: 0.2rem;
@@ -188,6 +193,54 @@ label {
   text-align: center;
   line-height: 5rem;
   cursor: pointer;
+}
+.a-box {
+  width: 100%;
+  font-size: 0.8rem;
+}
+.a-ib {
+  float: left;
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+}
+.a-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.a-f {
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.a-tags {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  font-size: 0.6rem;
+  color: #aaa;
+}
+.tags {
+  margin-right: 0.5rem;
+}
+.tags-a {
+  color: #aaa;
+}
+.tags-a:hover {
+  color: #7594b3;
+}
+.a-opt {
+  width: 50%;
+  overflow: hidden;
+  font-size: 0.6rem;
+  color: #aaa;
+}
+.opts {
+  margin-left: 0.5rem;
+  float: right;
+}
+.love {
+  font-size: 0.8rem;
 }
 html {
   font-size: 20px;
@@ -211,6 +264,9 @@ body {
   padding-right: 1rem;
   box-sizing: border-box;
   float: left;
+}
+.cl .row {
+  margin-bottom: 1rem;
 }
 .cr {
   width: 15rem;
