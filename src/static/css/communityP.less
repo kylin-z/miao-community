@@ -1,8 +1,13 @@
 @import "reset";
 @import "headerP";
-
+@import "community-write";
+@import "c-article";
 html {
     font-size: 20px;
+}
+
+input,textarea{
+    outline: none;//去除chrome获得焦点之后的蓝框
 }
 
 body {
@@ -11,3 +16,21 @@ body {
     font-family: "微软雅黑", "Arial";
 }
 
+.container{
+    width: 60rem;
+    margin: 3rem auto;
+    overflow: hidden;
+}
+.cl{
+    width: 45rem;
+    padding-right: 1rem;
+    box-sizing:border-box;
+    float: left;
+}
+.cr{
+    width: 15rem;
+    float: right;
+    box-sizing:border-box;
+    height: 15rem;
+    background: #fff;
+}

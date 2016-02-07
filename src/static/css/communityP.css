@@ -70,6 +70,7 @@ textarea {
   overflow: auto;
   color: inherit;
   font: inherit;
+  resize: none;
 }
 input::-ms-clear {
   display: none;
@@ -111,7 +112,7 @@ label {
   width: 100%;
   height: 4rem;
   background-color: #fff;
-  box-shadow: 0 0.05rem 0.25rem 0.05rem #807e7e;
+  box-shadow: 0 0.05rem 0.05rem 0.05rem #ADADAD;
   overflow: hidden;
 }
 .logo {
@@ -136,11 +137,85 @@ label {
   float: left;
   margin-left: 1rem;
 }
+.hs-box {
+  position: relative;
+  display: table-cell;
+  width: 7rem;
+}
+.hs-img {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0 0 0.05rem 0.05rem #ADADAD;
+}
+.c-box {
+  position: relative;
+  display: table-cell;
+  width: 37rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.05rem 0.05rem #ADADAD;
+  padding: 1rem 1rem;
+}
+.l-j {
+  position: absolute;
+  font-size: 1.3rem;
+  color: #fff;
+  left: -1.25rem;
+  top: -0.15rem;
+  text-shadow: -0.1rem 0.05rem 0.05rem #ADADAD;
+}
+.write-box {
+  width: 100%;
+  height: 5rem;
+  border: 0.1rem solid #dfdfdf;
+  font-size: 16px;
+}
+.wt {
+  width: 31rem;
+  height: 100%;
+  border: none;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+.i-ib {
+  width: 5rem;
+  height: 100%;
+  float: right;
+  background-color: #fafafa;
+  border-left: 0.1rem solid #dfdfdf;
+  color: #b3b3b3;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 5rem;
+  cursor: pointer;
+}
 html {
   font-size: 20px;
+}
+input,
+textarea {
+  outline: none;
 }
 body {
   background: #e7e7e7 url(../images/commnunity-bg.png);
   color: #333;
   font-family: "微软雅黑", "Arial";
+}
+.container {
+  width: 60rem;
+  margin: 3rem auto;
+  overflow: hidden;
+}
+.cl {
+  width: 45rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  float: left;
+}
+.cr {
+  width: 15rem;
+  float: right;
+  box-sizing: border-box;
+  height: 15rem;
+  background: #fff;
 }
