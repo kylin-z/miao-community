@@ -3,16 +3,34 @@
     font-size: 0.8rem;
 }
 .a-ib{
+    position: relative;
     float: left;
     display: inline-block;
     width: 10rem;
     height: 10rem;
     overflow: hidden;
+    margin-right: 1rem;
+    .a-img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .img-num{
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: auto;
+        bottom: 0.5rem;
+        left: auto;
+        right: 0.5rem;
+        border-radius: 0.2rem;
+        color: #fff;
+        text-align: center;
+        line-height: 1rem;
+    }
 }
-.a-img{
-    max-width: 100%;
-    max-height: 100%;
-}
+
 .a-f{
     margin-top: 1rem;
     overflow: hidden;
