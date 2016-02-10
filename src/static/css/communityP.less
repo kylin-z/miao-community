@@ -1,7 +1,9 @@
 @import "reset";
+@import "personInfoBoxP";
 @import "headerP";
 @import "community-write";
 @import "c-article";
+
 html {
     font-size: 20px;
 }
@@ -22,7 +24,7 @@ body {
     overflow: hidden;
 }
 .cl{
-    width: 45rem;
+    width: 48rem;
     padding-right: 1rem;
     box-sizing:border-box;
     float: left;
@@ -31,9 +33,20 @@ body {
     }
 }
 .cr{
-    width: 15rem;
+    width: 12rem;
     float: right;
-    box-sizing:border-box;
-    height: 15rem;
     background: #fff;
+}
+
+@media screen and (max-width: 1366px)
+{
+    html {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    html {
+        font-size: 12px;
+    }
 }

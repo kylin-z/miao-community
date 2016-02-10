@@ -1,0 +1,368 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+  width: 0;
+}
+mark {
+  background: #ff0;
+  color: #333;
+}
+figure {
+  margin: 1em 40px 1em 40px;
+}
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+input,
+button {
+  overflow: visible;
+  font-family: inherit;
+}
+textarea {
+  overflow: auto;
+  color: inherit;
+  font: inherit;
+  resize: none;
+}
+input::-ms-clear {
+  display: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+}
+table th,
+table td {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+iframe,
+img {
+  border: 0;
+}
+iframe {
+  vertical-align: top;
+}
+img {
+  vertical-align: middle;
+}
+a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+label {
+  display: inline-block;
+}
+body {
+  color: #333;
+  background: #95d3ce;
+  font-family: "微软雅黑", "Arial";
+}
+input[type='text'],
+input[type='password'] {
+  border: 0;
+  padding: 0 0.2rem 0 2.2rem;
+  width: 100%;
+  font-size: 0.7rem;
+  line-height: 1.8rem;
+  box-sizing: border-box;
+}
+input[type='text']:focus,
+input[type='password']:focus {
+  outline: none;
+}
+input[type='checkbox']:checked + i:before {
+  color: #70b760;
+}
+.header {
+  height: 3rem;
+  box-shadow: 0 0.05rem 0.25rem 0.05rem #807e7e;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background: rgba(149, 211, 206, 0.8);
+}
+.header .logo {
+  display: inline-block;
+  height: 100%;
+  width: 6rem;
+  line-height: 2.5rem;
+  margin-left: 1.5rem;
+}
+.header .logo .logo-img {
+  height: 1.5rem;
+  width: 4.5rem;
+}
+.header .menu-btn {
+  display: none;
+}
+.header .nav {
+  float: right;
+  margin-right: 1.5rem;
+}
+.header .nav li {
+  float: left;
+  line-height: 3rem;
+  margin-left: 0.4rem;
+}
+.header .nav li .menu {
+  font-size: 0.9rem;
+  padding: 0.2rem 0.8rem;
+  color: #fff;
+}
+.header .nav li .circle {
+  border: 2px solid #fff;
+  border-radius: 2rem;
+}
+.icon {
+  line-height: 1.6rem;
+  color: #fff;
+  font-size: 1.3rem;
+  width: 2rem;
+  height: 2rem;
+  float: left;
+  text-align: center;
+  margin: -0.1rem -2rem -0.1rem -0.1rem;
+  position: absolute;
+  z-index: 999;
+}
+.container {
+  position: absolute;
+  top: 6rem;
+  width: 100%;
+  z-index: 99;
+}
+.container .login-box {
+  margin: auto;
+  width: 21rem;
+}
+.container .login-box .cat {
+  height: 12.5rem;
+  background: url("../images/miao.png") no-repeat 3rem;
+  background-size: contain;
+}
+.container .login-box .cat-b {
+  background: url("../images/miao-2.png") no-repeat 3rem;
+  background-size: contain;
+}
+.container .login-box .signIn-box {
+  border-radius: 0.2rem;
+  background: #fff;
+  border: 0.1rem solid #e4e4e4;
+  padding: 1.8rem 2rem;
+}
+.container .login-box .signIn-box .username {
+  width: 100%;
+  height: 1.8rem;
+  display: inline-block;
+  border: 0.1rem solid #d7d7d7;
+  overflow: hidden;
+}
+.container .login-box .signIn-box .username .icon {
+  background: rgba(246, 171, 84, 0.7);
+}
+.container .login-box .signIn-box .password {
+  margin-top: 1rem;
+  width: 100%;
+  height: 1.8rem;
+  display: inline-block;
+  border: 0.1rem solid #d7d7d7;
+  overflow: hidden;
+}
+.container .login-box .signIn-box .password .icon {
+  background: rgba(141, 200, 254, 0.7);
+}
+.container .login-box .signIn-box .row {
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  color: #6f6f6f;
+}
+.container .login-box .signIn-box .row .rem-password .kIcon {
+  border: 0.1rem solid #70b760;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.container .login-box .signIn-box .row .forget-password {
+  float: right;
+  color: #6f6f6f;
+}
+.container .login-box .signIn-box .login-btn {
+  margin-top: 0.8rem;
+  background: #bce094;
+  color: #fff;
+  padding: 0.3rem 0;
+  text-align: center;
+  width: 100%;
+  border: 0.1rem solid #bce094;
+  cursor: pointer;
+}
+.bottom-img {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+.bottom-img img {
+  width: 100%;
+}
+.snow {
+  position: absolute;
+  z-index: 1;
+}
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 1920px) and (min-width: 1367px) {
+  html {
+    font-size: 26px;
+  }
+}
+@media all and (orientation: portrait) {
+  .container {
+    bottom: 0;
+    top: auto;
+  }
+  .container .login-box {
+    width: 100%;
+  }
+  .container .login-box .cat {
+    background-position: center;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header .menu-btn {
+    display: block;
+    float: right;
+    margin-right: 1.5rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .bottom-img {
+    display: none;
+  }
+  .snow {
+    display: none;
+  }
+}
+@media screen and (orientation: portrait) and (min-height: 736px) and (max-height: 763px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (orientation: portrait) and (min-height: 764px) and (max-height: 900px) {
+  html {
+    font-size: 26px;
+  }
+}
+@media screen and (orientation: portrait) and (min-height: 901px) and (max-height: 1024px) {
+  html {
+    font-size: 28px;
+  }
+}
+@media only screen and (orientation: portrait) and (min-height: 1600px) and (max-height: 1920px) {
+  html {
+    font-size: 60px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  html {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  html {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  html {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  html {
+    font-size: 38px;
+  }
+}

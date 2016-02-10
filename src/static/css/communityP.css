@@ -107,6 +107,55 @@ a:active {
 label {
   display: inline-block;
 }
+.personInfoBox {
+  box-shadow: 0 0.06rem 0.05rem 0.05rem#ADADAD;
+}
+.personInfoBox .headImgbox {
+  box-shadow: 0 0.06rem 0.05rem 0.05rem#ADADAD;
+}
+.personInfoBox .headImgbox .headImg {
+  height: 13rem;
+  background: url(../images/head.png) no-repeat center;
+  background-size: contain;
+}
+.personInfoBox .headImgbox .userbox {
+  height: 2rem;
+  background: #f3f3f3;
+  border-top: 0.05rem solid #D1D1D1;
+  font-size: 0.8rem;
+  line-height: 2rem;
+}
+.personInfoBox .headImgbox .userbox .name {
+  margin-left: 1rem;
+  border-right: 0.05rem solid #dfdfdf ;
+  width: 75%;
+  float: left;
+}
+.personInfoBox .headImgbox .userbox .selectBox {
+  border-left: 0.05rem solid #fff;
+  width: 2.4rem;
+  height: 2rem;
+  float: left;
+}
+.personInfoBox .featureBox {
+  margin-top: 0.15rem ;
+  font-size: 0.7rem;
+  line-height: 2rem;
+  text-indent: 1rem;
+  background: #f3f3f3 ;
+}
+.personInfoBox .featureBox li {
+  border-top: 0.05rem solid #fff;
+  border-bottom: 0.05rem solid #dfdfdf ;
+}
+.personInfoBox .featureBox li:first-child {
+  border-top: none ;
+}
+.personInfoBox .featureBox span {
+  float: right;
+  margin-right: 0.8rem ;
+  color: #a7a7a7;
+}
 .header {
   width: 100%;
   height: 4rem;
@@ -114,12 +163,16 @@ label {
   box-shadow: 0 0.05rem 0.05rem 0.05rem #ADADAD;
   overflow: hidden;
 }
+.menu-box {
+  width: 60rem;
+  margin: 0 auto;
+  height: 100%;
+}
 .logo {
   display: inline-block;
   height: 100%;
   width: 6rem;
   line-height: 3.5rem;
-  margin-left: 18rem;
 }
 .logo-img {
   height: 1.5rem;
@@ -128,8 +181,7 @@ label {
 .nav {
   display: inline-block;
   float: right;
-  margin-right: 18rem;
-  line-height: 3.5rem;
+  line-height: 4rem;
   overflow: hidden;
 }
 .nav li {
@@ -156,7 +208,7 @@ label {
 .c-box {
   position: relative;
   display: table-cell;
-  width: 35rem;
+  width: 38rem;
   background-color: #fff;
   box-shadow: 0 0.06rem 0.05rem 0.05rem#ADADAD;
   padding: 1rem 1rem;
@@ -165,9 +217,12 @@ label {
   position: absolute;
   font-size: 1.3rem;
   color: #fff;
-  left: -1.25rem;
+  left: -1.2rem;
   top: -0.15rem;
   text-shadow: -0.1rem 0.05rem 0.05rem #ADADAD;
+  width: 1.3rem;
+  height: 1.3rem;
+  overflow: hidden;
 }
 .write-box {
   width: 100%;
@@ -193,6 +248,11 @@ label {
   text-align: center;
   line-height: 5rem;
   cursor: pointer;
+}
+@media screen and (max-width: 1366px) {
+  .c-box {
+    box-shadow: 0 0.08rem 0.1rem 0.02rem#ADADAD;
+  }
 }
 .a-box {
   width: 100%;
@@ -259,6 +319,9 @@ label {
 .love {
   font-size: 0.8rem;
 }
+.r-a .l-j {
+  top: -0.04rem;
+}
 html {
   font-size: 20px;
 }
@@ -277,7 +340,7 @@ body {
   overflow: hidden;
 }
 .cl {
-  width: 45rem;
+  width: 48rem;
   padding-right: 1rem;
   box-sizing: border-box;
   float: left;
@@ -286,9 +349,17 @@ body {
   margin-bottom: 1rem;
 }
 .cr {
-  width: 15rem;
+  width: 12rem;
   float: right;
-  box-sizing: border-box;
-  height: 15rem;
   background: #fff;
+}
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
 }

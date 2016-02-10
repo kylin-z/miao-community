@@ -1,0 +1,49 @@
+.personInfoBox {
+  box-shadow: 0 0.06rem 0.05rem 0.05rem#ADADAD;
+}
+.personInfoBox .headImgbox {
+  box-shadow: 0 0.06rem 0.05rem 0.05rem#ADADAD;
+}
+.personInfoBox .headImgbox .headImg {
+  height: 13rem;
+  background: url(../images/head.png) no-repeat center;
+  background-size: contain;
+}
+.personInfoBox .headImgbox .userbox {
+  height: 2rem;
+  background: #f3f3f3;
+  border-top: 0.05rem solid #D1D1D1;
+  font-size: 0.8rem;
+  line-height: 2rem;
+}
+.personInfoBox .headImgbox .userbox .name {
+  margin-left: 1rem;
+  border-right: 0.05rem solid #dfdfdf ;
+  width: 75%;
+  float: left;
+}
+.personInfoBox .headImgbox .userbox .selectBox {
+  border-left: 0.05rem solid #fff;
+  width: 2.4rem;
+  height: 2rem;
+  float: left;
+}
+.personInfoBox .featureBox {
+  margin-top: 0.15rem ;
+  font-size: 0.7rem;
+  line-height: 2rem;
+  text-indent: 1rem;
+  background: #f3f3f3 ;
+}
+.personInfoBox .featureBox li {
+  border-top: 0.05rem solid #fff;
+  border-bottom: 0.05rem solid #dfdfdf ;
+}
+.personInfoBox .featureBox li:first-child {
+  border-top: none ;
+}
+.personInfoBox .featureBox span {
+  float: right;
+  margin-right: 0.8rem ;
+  color: #a7a7a7;
+}
