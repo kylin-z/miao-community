@@ -322,6 +322,44 @@ label {
 .r-a .l-j {
   top: -0.04rem;
 }
+.p-bg {
+  background-color: #fff;
+  margin-left: 0.1rem;
+  margin-top: 0.1rem;
+  box-shadow: 0 0 0.05rem 0.05rem #BDBDBD;
+  padding: 1.55rem;
+  box-sizing: border-box;
+}
+.p-list {
+  overflow: hidden;
+}
+.p-list .p-li {
+  position: relative;
+  width: 8.25rem;
+  height: 8.25rem;
+  background-color: #fff;
+  float: left;
+  margin: 0.25rem;
+  overflow: hidden;
+}
+.p-list .p-li .p-img {
+  width: 100%;
+}
+.p-list .p-li .p-tags {
+  max-width: 3rem;
+  overflow: hidden;
+  font-size: 0.6rem;
+  color: #fff;
+  padding: 0.2rem;
+  position: absolute;
+  z-index: 6;
+  top: auto;
+  left: 0.5rem ;
+  right: auto;
+  bottom: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
 html {
   font-size: 20px;
 }
