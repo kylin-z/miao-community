@@ -106,10 +106,14 @@ label {
   display: inline-block;
 }
 .personInfoBox {
-  box-shadow: 0 0.06rem 0.05rem 0.05rem#ADADAD;
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  box-shadow: 0 0 0.05rem 0.05rem #BDBDBD;
+  background: #fff;
 }
 .personInfoBox .headImgbox {
-  box-shadow: 0 0.06rem 0.05rem 0.05rem#ADADAD;
+  box-shadow: 0 0.06rem 0.05rem 0.05rem #BDBDBD;
 }
 .personInfoBox .headImgbox .headImg {
   height: 13rem;
@@ -131,7 +135,7 @@ label {
 }
 .personInfoBox .headImgbox .userbox .selectBox {
   border-left: 0.05rem solid #fff;
-  width: 2.4rem;
+  width: 0.05rem;
   height: 2rem;
   float: left;
 }
@@ -358,6 +362,63 @@ label {
   border-radius: 0.25rem;
   background-color: rgba(0, 0, 0, 0.8);
 }
+.m-box {
+  background-color: #fff;
+  margin-left: 0.1rem;
+  margin-top: 0.1rem;
+  box-shadow: 0 0 0.05rem 0.05rem #BDBDBD;
+  box-sizing: border-box;
+}
+.m-box .messageMenu {
+  padding: 1.55rem 1.55rem 0.7rem 1.55rem;
+  border-bottom: 0.05rem solid #e7e7e7;
+}
+.m-box .messageMenu .m-name {
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+.m-box .messageMenu .m-menu {
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+.m-box .messageMenu .m-menu .m-all {
+  float: right;
+  margin-right: 1.5rem;
+}
+.m-box .messageMenu .m-menu .m-no {
+  float: right;
+}
+.m-box .messageBox {
+  padding: 1.55rem 1.55rem 1rem 1.55rem;
+  border-bottom: 0.05rem solid #e7e7e7;
+  overflow: hidden;
+}
+.m-box .messageBox .m-avatar {
+  width: 5rem;
+  height: 5rem;
+  float: left;
+}
+.m-box .messageBox .m-container {
+  margin-left: 5.5rem;
+  font-size: 0.8rem;
+}
+.m-box .messageBox .m-container .m-content {
+  margin-top: 0.5rem;
+}
+.m-box .messageBox .m-container .m-time {
+  margin-top: 0.5rem;
+  float: left;
+}
+.m-box .messageBox .m-container .m-chat {
+  margin-top: 0.5rem;
+  float: right;
+}
+.blue {
+  color: #5a8dcd;
+}
+.grey {
+  color: #adadad;
+}
 html {
   font-size: 20px;
 }
@@ -387,7 +448,6 @@ body {
 .cr {
   width: 12rem;
   float: right;
-  background: #fff;
 }
 @media screen and (max-width: 1366px) {
   html {

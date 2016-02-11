@@ -7,7 +7,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/community', function (req, res, next) {
-    res.render('communityP');
+    res.render('communityM');
 });
 
 module.exports = router;
