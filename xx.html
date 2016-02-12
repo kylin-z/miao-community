@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <title></title>
     <style>
-        .xx{
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .left{
             width: 100px;
             height: 100px;
             background-color: pink;
             position: absolute;
-            top: 0;bottom: 0;left: 0;right: 0;
-            margin: auto;
-            box-shadow: 0 0 20px red;
-            border-radius: 50%;
+            top: 0;
         }
-        #triangle-up {
-            width: 0;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-bottom: 100px solid red;
-            box-shadow: 0 0 20px pink;
+        .right {
+            background-color: #003300;
+            height: 100px;
+            margin-left: 100px;
+            border-bottom: 2px solid crimson;
         }
     </style>
 </head>
 <body>
-<a><div class="xx"></div></a>
-<div id="triangle-up"></div>
+<div class="left"></div>
+<div class="right"></div>
 </body>
 </html>

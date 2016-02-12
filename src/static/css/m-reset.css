@@ -99,6 +99,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 a {
+  color: #333;
   background: transparent;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;

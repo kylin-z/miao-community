@@ -13,6 +13,7 @@
 
 
 
+
 .iconfont {
   font-family:"iconfont" !important;
   /*font-size:16px;*/
@@ -37,6 +38,7 @@
 .icon-my-zhaoxiangji:before { content: "\e60d"; }
 .icon-fuxuankuang:before { content: "\e609"; }
 .icon-tags:before{content: "\e60f";}
-.icon-love:before{content: "\e611"}
-.icon-menu:before{content: "\e61b"}
+.icon-love:before{content: "\e611";}
+.icon-back:before{content:"\e619";}
+.icon-gz:before{content:"\e613";}
 .icon-plus:before{content: "\e61d"}
