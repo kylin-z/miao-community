@@ -31,7 +31,9 @@ gulp.task('templates', function(){
         .pipe(watch('components/**/*.hbs',function(event){
             watchLog(event);
         }))
-        .pipe(handlebars())
+        .pipe(handlebars({
+            handlebars: require('handlebars')
+        }))
         //.pipe(wrap('Handlebars.template(<%= contents %>)'))
         //.pipe(declare({
         //    namespace: 'MyApp.templates',

@@ -139,6 +139,11 @@ label {
   height: 2rem;
   float: left;
 }
+.personInfoBox .headImgbox .userbox .icon-th {
+  font-size: 1rem;
+  color: #999;
+  margin-left: 0.3rem;
+}
 .personInfoBox .featureBox {
   margin-top: 0.15rem ;
   font-size: 0.7rem;
@@ -157,6 +162,17 @@ label {
   float: right;
   margin-right: 0.8rem ;
   color: #a7a7a7;
+}
+.personInfoBox .featureBox .icon-style {
+  font-size: 0.8rem;
+  color: #c8c8c8;
+  margin-right: 0.4rem;
+}
+@media screen and (max-width: 1366px) {
+  .personInfoBox .featureBox li {
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #fff;
+  }
 }
 .header {
   width: 100%;

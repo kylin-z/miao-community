@@ -5,7 +5,6 @@
     <title>社区</title>
     <link href="css/cp-common.css" rel="stylesheet">
     <link rel="stylesheet" href="css/iconfont.css">
-    <script src="js/libs/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 <div class="header">
@@ -20,7 +19,7 @@
     </div>
 </div>
 <div class="container">
-    <div class="cl" >
+    <div class="cl">
         <div class="row">
             <div class="hs-box">
                 <a href="###"><img class="hs-img" src="images/hs-img.png"></a>
@@ -36,7 +35,7 @@
             </div>
         </div>
 
-        <div class="row r-a">
+        <div style="display: none" class="row r-a">
             <div class="hs-box">
                 <a href="###"><img class="hs-img" src="images/hs-img.png"></a>
             </div>
@@ -94,13 +93,20 @@
     <div class="cl" style="display: none">
         <div class="p-bg">
             <ul class="p-list">
-                <li class="p-li"><a href="###"><img src="images/lanmao.jpg" class="p-img"><span class="p-tags">蓝猫</span></a></li>
-                <li class="p-li"><a href="###"><img src="images/yitong.jpg" class="p-img"><span class="p-tags">异瞳</span></a></li>
-                <li class="p-li"><a href="###"><img src="images/meizi.jpg" class="p-img"><span class="p-tags">妹子</span></a></li>
-                <li class="p-li"><a href="###"><img src="images/cangshu.jpg" class="p-img"><span class="p-tags">仓鼠</span></a></li>
-                <li class="p-li"><a href="###"><img src="images/youji.jpg" class="p-img"><span class="p-tags">游记</span></a></li>
-                <li class="p-li"><a href="###"><img src="images/sheying.jpg" class="p-img"><span class="p-tags">摄影</span></a></li>
-                <li class="p-li"><a href="###"><img src="images/rixi.jpg" class="p-img"><span class="p-tags">日系</span></a></li>
+                <li class="p-li"><a href="###"><img src="images/lanmao.jpg" class="p-img"><span class="p-tags">蓝猫</span></a>
+                </li>
+                <li class="p-li"><a href="###"><img src="images/yitong.jpg" class="p-img"><span class="p-tags">异瞳</span></a>
+                </li>
+                <li class="p-li"><a href="###"><img src="images/meizi.jpg" class="p-img"><span class="p-tags">妹子</span></a>
+                </li>
+                <li class="p-li"><a href="###"><img src="images/cangshu.jpg" class="p-img"><span
+                        class="p-tags">仓鼠</span></a></li>
+                <li class="p-li"><a href="###"><img src="images/youji.jpg" class="p-img"><span class="p-tags">游记</span></a>
+                </li>
+                <li class="p-li"><a href="###"><img src="images/sheying.jpg" class="p-img"><span
+                        class="p-tags">摄影</span></a></li>
+                <li class="p-li"><a href="###"><img src="images/rixi.jpg" class="p-img"><span
+                        class="p-tags">日系</span></a></li>
             </ul>
         </div>
     </div>
@@ -146,17 +152,20 @@
                 <div class="userbox">
                     <div class="name">阿开的主页</div>
                     <div class="selectBox"></div>
+                    <i class="iconfont icon-back icon-th"></i>
                 </div>
             </div>
             <ul class="featureBox">
-                <li><i></i>关注<span>1</span></li>
-                <li><i></i>订阅<span>121</span></li>
-                <li><i></i>粉丝<span>1</span></li>
-                <li><i></i>评论<span></span></li>
-                <li><i></i>私信<span></span></li>
+                <li><i class=" iconfont icon-gz icon-style"></i>关注<span>1</span></li>
+                <li><i class=" iconfont icon-dy icon-style"></i>订阅<span>121</span></li>
+                <li><i class="iconfont icon-fs icon-style" ></i>粉丝<span>1</span></li>
+                <li><i class="iconfont icon-pl icon-style"></i>评论<span></span></li>
+                <li><i class="iconfont icon-sx icon-style"></i>私信<span></span></li>
             </ul>
         </div>
     </div>
 </div>
+<script src="js/libs/handlebars.js"></script>
+<script data-main="js/community/c-main" src="js/libs/require.js"></script>
 </body>
 </html>
