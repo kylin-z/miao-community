@@ -3,32 +3,24 @@
 </div>
 <div class="c-box">
     <i class="iconfont icon-l-jian l-j"></i>
-
+    <div class="a-header">
+        <a href="###">{{author}}</a>
+        <i class="iconfont icon-gz-p i-gz" title="关注"></i>
+    </div>
     <div class="a-box">
         <a href="###" class="a-ib">
             <img src="images/a-img.jpg" class="a-img"/>
-            <span class="img-num">3</span>
+            {{#if picture.length}}
+            <span class="img-num">picture.length</span>
+            {{/if}}
         </a>
-
-        <p>大荼小岩猫咪paro</p>
-
-        <p><br/></p>
-
-        <p>春夏秋冬又一春~</p>
-
-        <p><br/></p>
-
-        <p>祝大家除夕快乐！新年快乐！明年也要开开心心~感谢大家的陪伴~</p>
-
-        <p><br/></p>
-
-        <p>这也是勇漫的第一个春节啊，期待你越来越好。</p>
-
-        <p><br/></p>
-
-        <p>春的原图感谢授权 @熙AKIRA 地址</p>
-
-        <p><br/></p>
+        {{#each content}}
+            {{#if this}}
+                <p>{{this}}</p>
+            {{else}}
+                <p><br/></p>
+            {{/if}}
+        {{/each}}
     </div>
     <div class="a-f">
         <div class="a-tags">
@@ -41,15 +33,15 @@
         </div>
         <div class="a-opt">
             {{#if isMe}}
-                <span class="opts"><a href="###" class="tags-a">删除</a></span>
-                <span class="opts"><a href="###" class="tags-a">编辑</a></span>
+                <span class="opts tags-a do-del">删除</span>
+                <span class="opts tags-a do-edit">编辑</span>
             {{else}}
-                <span class="opts"><a href="###" class="tags-a">
-                    <i class="iconfont icon-love love"></i></a>
+                <span class="opts tags-a">
+                    <i class="iconfont icon-love love"></i>
                 </span>
             {{/if}}
-            <span class="opts"><a href="###" class="tags-a">评论({{discuss.length}})</a></span>
-            <span class="opts"><a href="###" class="tags-a">热度({{hot}})</a></span>
+            <span class="opts tags-a do-dis">评论({{discuss.length}})</span>
+            <span class="opts tags-a do-hot">热度({{hot}})</span>
         </div>
     </div>
 </div>

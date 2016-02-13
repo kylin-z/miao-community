@@ -326,6 +326,9 @@ label {
 .a-box {
   width: 100%;
   font-size: 0.8rem;
+  color: #444;
+  position: relative;
+  overflow: hidden;
 }
 .a-ib {
   position: relative;
@@ -356,8 +359,8 @@ label {
   line-height: 1rem;
 }
 .a-f {
-  margin-top: 1rem;
   overflow: hidden;
+  margin-top: 1rem;
 }
 .a-tags {
   float: left;
@@ -370,6 +373,7 @@ label {
   margin-right: 0.5rem;
 }
 .tags-a {
+  cursor: pointer;
   color: #aaa;
 }
 .tags-a:hover {
@@ -391,6 +395,21 @@ label {
 }
 .r-a .l-j {
   top: -0.04rem;
+}
+.a-header {
+  font-size: 0.7rem;
+  color: #888;
+  margin-bottom: 0.4rem;
+}
+.a-header a {
+  color: #888;
+  margin-right: 0.4rem;
+}
+.a-header a:hover {
+  color: #7594b3;
+}
+.a-header .i-gz {
+  cursor: pointer;
 }
 .p-bg {
   background-color: #fff;

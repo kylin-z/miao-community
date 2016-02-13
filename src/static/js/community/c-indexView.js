@@ -19,11 +19,14 @@ define([
         events:{
             'click .wt':'wFooterShow',
             'keypress .wi':'tagEnter',
-            'click .w-btn':'writeAdd'
+            'click .w-btn':'writeAdd',
+            'click .w-tag':'tagDel'
         },
         initialize: function () {
             this.render();
-            this.listenTo(Articles, 'add', this.AddOne);
+            this.listenTo(Articles, 'add', this.addOne);
+            this.listenTo(Articles, 'reset', this.addAll);
+
         },
         render:function(){
             this.$writeTpt = Index();
@@ -33,6 +36,9 @@ define([
             this.$aBox = $('.c-at');//文章外框
             this.$wFooterBox = $('.w-footer');
             this.$tagInput = $('.wi');//tag框
+            this.$ArticleList = $('.c-at');
+            Articles.fetch({reset:true});//reset 之后触发addAll
+
         },
         wFooterShow:function(){
             this.$wFooterBox.removeClass('f-hidden');
@@ -49,8 +55,8 @@ define([
         },
         newAttributes: function () {
             return {
-                author:'',
-                content:this.$wTextarea.val(),
+                author:'一碗虾仁',
+                content:this.$wTextarea.val().split('\n'),
                 tags:this.tagsItem(),
                 isMe:true,
                 picture:[],
@@ -68,18 +74,29 @@ define([
             return tagsArr;
         },
         writeAdd: function () {
-            Articles.create(this.newAttributes());
-            this.writeBoxClean();//发布后清空输入框和标签框
-
+            if(this.$wTextarea.val()){
+                Articles.create(this.newAttributes());
+                this.writeBoxClean();//发布后清空输入框和标签框
+            }
+            else{
+                alert('内容不得为空');
+            }
         },
         writeBoxClean:function(){
             this.$wTextarea.val('');
             this.$wFooterBox.find('.w-tag').remove();
             this.$wFooterBox.addClass('f-hidden');
         },
-        AddOne:function(article){
+        addOne:function(article){
             var articleView = new ArticleView({ model: article });
             this.$aBox.prepend(articleView.render().el);//render函数返回articleView  el即$('.r-a')那行元素
+        },
+        addAll: function () {
+            this.$ArticleList.empty();//清空列表
+            Articles.each(this.addOne, this);
+        },
+        tagDel: function (e) {
+            e.target.remove();//删除触发时间的元素
         }
     });
     return IndexView;

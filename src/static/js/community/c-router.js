@@ -30,9 +30,9 @@ define([
             this.letterView.render();
         },
         initialize: function () {
-            this.indexView = new IndexView();//new一个index视图 关联文件c-indexView.js
             this.followView = new FollowView();
             this.letterView = new LetterView();
+            this.indexView = new IndexView();//new一个index视图 关联文件c-indexView.js
         }
     });
 
