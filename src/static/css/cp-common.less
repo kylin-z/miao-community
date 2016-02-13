@@ -1,10 +1,10 @@
 @import "p-reset";
-@import "cp-personInfoBox";
-@import "cp-header";
-@import "cp-write";
+@import "../../components/cp-personInfoBox/cp-personInfoBox";
+@import "../../components/cp-header/cp-header";
+@import "../../components/cp-index/cp-write";
 @import "../../components/cp-article/cp-article";
-@import "cp-follow";
-@import "cp-letter";
+@import "../../components/cp-follow/cp-follow";
+@import "../../components/cp-letter/cp-letter";
 
 html {
     font-size: 20px;
@@ -37,7 +37,12 @@ body {
     width: 12rem;
     float: right;
 }
-
+.f-hidden{
+    display: none;
+}
+.f-show{
+    display: inline-block;
+}
 @media screen and (max-width: 1366px)
 {
     html {

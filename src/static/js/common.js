@@ -1,11 +1,12 @@
 /**
  * Created by kailin on 2016/2/12.
- * ¹«¹²Êı¾İ
+ * å…¬å…±æ•°æ®
  */
 'use strict';
 
 define([], function () {
     return {
-        ENTER_KEY: 13//»Ø³µ¼ü
+        cFilter:'',
+        ENTER_KEY: 13//å›è½¦é”®
     };
 });

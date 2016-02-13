@@ -1,6 +1,6 @@
 /**
  * Created by Arkay on 2015/12/10.
- * communityÏµÁÐÒ³ÃæÖ÷Èë¿Ú
+ * communityÏµï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 
 'use strict';
@@ -38,7 +38,9 @@ require.config({
 require([
     'backbone',
     'c-app',
-], function (Backbone, AppView) {
+    'c-router'
+], function (Backbone, AppView,Router) {
+    new Router();
     Backbone.history.start();
     new AppView();
 });

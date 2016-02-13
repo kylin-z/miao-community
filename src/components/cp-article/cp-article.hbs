@@ -1,54 +1,55 @@
-<div class="row r-a">
-    <div class="hs-box">
-        <a href="###"><img class="hs-img" src="images/hs-img.png"></a>
+<div class="hs-box">
+    <a href="###"><img class="hs-img" src="images/hs-img.png"></a>
+</div>
+<div class="c-box">
+    <i class="iconfont icon-l-jian l-j"></i>
+
+    <div class="a-box">
+        <a href="###" class="a-ib">
+            <img src="images/a-img.jpg" class="a-img"/>
+            <span class="img-num">3</span>
+        </a>
+
+        <p>大荼小岩猫咪paro</p>
+
+        <p><br/></p>
+
+        <p>春夏秋冬又一春~</p>
+
+        <p><br/></p>
+
+        <p>祝大家除夕快乐！新年快乐！明年也要开开心心~感谢大家的陪伴~</p>
+
+        <p><br/></p>
+
+        <p>这也是勇漫的第一个春节啊，期待你越来越好。</p>
+
+        <p><br/></p>
+
+        <p>春的原图感谢授权 @熙AKIRA 地址</p>
+
+        <p><br/></p>
     </div>
-    <div class="c-box">
-        <i class="iconfont icon-l-jian l-j"></i>
-
-        <div class="a-box">
-            <a href="###" class="a-ib">
-                <img src="images/a-img.jpg" class="a-img"/>
-                <span class="img-num">3</span>
-            </a>
-
-            <p>大荼小岩猫咪paro</p>
-
-            <p><br/></p>
-
-            <p>春夏秋冬又一春~</p>
-
-            <p><br/></p>
-
-            <p>祝大家除夕快乐！新年快乐！明年也要开开心心~感谢大家的陪伴~</p>
-
-            <p><br/></p>
-
-            <p>这也是勇漫的第一个春节啊，期待你越来越好。</p>
-
-            <p><br/></p>
-
-            <p>春的原图感谢授权 @熙AKIRA 地址</p>
-
-            <p><br/></p>
-        </div>
-        <div class="a-f">
-            <div class="a-tags">
+    <div class="a-f">
+        <div class="a-tags">
+            {{#if tags.length}}
                 <i class="iconfont icon-tags a-ts"></i>
-                <span class="tags"><a href="###" class="tags-a">勇者大冒险</a></span>
-                <span class="tags"><a href="###" class="tags-a">神荼</a></span>
-                <span class="tags"><a href="###" class="tags-a">安岩</a></span>
-            </div>
-            <div class="a-opt others">
-                        <span class="opts"><a href="###" class="tags-a"><i
-                                class="iconfont icon-love love"></i></a></span>
-                <span class="opts"><a href="###" class="tags-a">评论(11)</a></span>
-                <span class="opts"><a href="###" class="tags-a">热度(76)</a></span>
-            </div>
-            <div class="a-opt mine" style="display: none">
-                <span class="opts"><a href="###" class="tags-a">评论</a></span>
+            {{/if}}
+            {{#each tags}}
+                <span class="tags"><a href="###" class="tags-a">{{this}}</a></span>
+            {{/each}}
+        </div>
+        <div class="a-opt">
+            {{#if isMe}}
                 <span class="opts"><a href="###" class="tags-a">删除</a></span>
                 <span class="opts"><a href="###" class="tags-a">编辑</a></span>
-            </div>
+            {{else}}
+                <span class="opts"><a href="###" class="tags-a">
+                    <i class="iconfont icon-love love"></i></a>
+                </span>
+            {{/if}}
+            <span class="opts"><a href="###" class="tags-a">评论({{discuss.length}})</a></span>
+            <span class="opts"><a href="###" class="tags-a">热度({{hot}})</a></span>
         </div>
     </div>
 </div>

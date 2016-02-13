@@ -117,7 +117,7 @@ label {
 }
 .personInfoBox .headImgbox .headImg {
   height: 13rem;
-  background: url(../images/head.png) no-repeat center;
+  background: url(../../static/images/head.png) no-repeat center;
   background-size: contain;
 }
 .personInfoBox .headImgbox .userbox {
@@ -167,6 +167,12 @@ label {
   font-size: 0.8rem;
   color: #c8c8c8;
   margin-right: 0.4rem;
+}
+.pb-a {
+  color: #333;
+}
+.pb-a:hover {
+  color: #7594b3;
 }
 @media screen and (max-width: 1366px) {
   .personInfoBox .featureBox li {
@@ -231,7 +237,7 @@ label {
   box-shadow: 0 0.06rem 0.05rem 0.05rem#ADADAD;
   padding: 1rem 1rem;
 }
-.l-j {
+.c-box .l-j {
   position: absolute;
   font-size: 1.3rem;
   color: #fff;
@@ -242,20 +248,20 @@ label {
   height: 1.3rem;
   overflow: hidden;
 }
-.write-box {
+.c-box .write-box {
   width: 100%;
   height: 5rem;
   border: 0.1rem solid #dfdfdf;
-  font-size: 16px;
+  font-size: 0.8rem;
 }
-.wt {
-  width: 29rem;
+.c-box .wt {
+  width: 32rem;
   height: 100%;
   border: none;
   padding: 0.2rem;
   box-sizing: border-box;
 }
-.i-ib {
+.c-box .i-ib {
   width: 5rem;
   height: 100%;
   float: right;
@@ -267,9 +273,54 @@ label {
   line-height: 5rem;
   cursor: pointer;
 }
-@media screen and (max-width: 1366px) {
+.c-box .w-footer {
+  width: 100%;
+  height: 1.5rem;
+  border: 0.1rem solid #dfdfdf;
+  border-top: none;
+  font-size: 0.6rem;
+}
+.c-box .wi {
+  width: 15rem;
+  height: 100%;
+  border: none;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+.c-box .w-btn {
+  margin: -0.1rem -0.1rem 0 0;
+  width: 5rem;
+  height: 100%;
+  float: right;
+  background-color: #b8cde9;
+  border: 0.1rem solid #abc0dc;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+.c-box .i-pub {
+  margin-right: 0.5rem;
+}
+.c-box .i-tags {
+  color: #aaa;
+  margin-left: 0.3rem;
+}
+.c-box .w-tag {
+  color: #aaa;
+  margin: 0 0.1rem;
+  cursor: pointer;
+}
+.c-box .w-tag:hover {
+  text-decoration: line-through;
+}
+@media screen and (max-width: 1366px) and (min-width: 1025px) {
   .c-box {
     box-shadow: 0 0.08rem 0.1rem 0.02rem#ADADAD;
+  }
+  .c-box .w-btn {
+    margin: -1px -1px 0 0;
   }
 }
 .a-box {
@@ -329,6 +380,7 @@ label {
   overflow: hidden;
   font-size: 0.6rem;
   color: #aaa;
+  float: right;
 }
 .opts {
   margin-left: 0.5rem;
@@ -464,6 +516,12 @@ body {
 .cr {
   width: 12rem;
   float: right;
+}
+.f-hidden {
+  display: none;
+}
+.f-show {
+  display: inline-block;
 }
 @media screen and (max-width: 1366px) {
   html {
