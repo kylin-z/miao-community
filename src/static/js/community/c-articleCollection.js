@@ -10,8 +10,9 @@ define([
     'use strict';
 
     var ArticlesCollection = Backbone.Collection.extend({
+        url:'article',
         model: Article,
-        localStorage: new Store('c-index'),
+        //localStorage: new Store('c-index'),
     });
 
     return new ArticlesCollection();

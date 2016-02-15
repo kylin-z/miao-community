@@ -75,7 +75,11 @@ define([
         },
         writeAdd: function () {
             if(this.$wTextarea.val()){
-                Articles.create(this.newAttributes());
+                Articles.create(this.newAttributes(),{
+                    success:function(model,data){
+                        console.log(data);//返回数据
+                    }
+                });
                 this.writeBoxClean();//发布后清空输入框和标签框
             }
             else{
